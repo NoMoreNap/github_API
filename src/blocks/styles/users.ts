@@ -64,3 +64,14 @@ export const Pages = styled.ul`
         }
     }
 `
+export const A = styled.a`
+    cursor: pointer;
+`
+export const InputCheckbox = styled.input`
+    display: none;
+`
+export const ToddleDiv = styled.div``
+export const ToggleLabel = styled.label`
+    cursor: pointer;
+`
+export const ToggleP = styled.p``

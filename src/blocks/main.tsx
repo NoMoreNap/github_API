@@ -1,11 +1,15 @@
-import React from 'react';
-import { Centerblock } from './centerblock';
-import { MainDiv } from './styles/main';
+import React from 'react'
+//import { Centerblock } from './centerblock'
+import { MainDiv } from './styles/main'
+import { BrowserRouter } from 'react-router-dom'
+import { AppRoutes } from '../routes'
 
 export function Main(): JSX.Element {
     return (
         <MainDiv>
-            <Centerblock/>
+            <BrowserRouter>
+                <AppRoutes />
+            </BrowserRouter>
         </MainDiv>
     )
 }

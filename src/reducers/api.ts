@@ -4,7 +4,6 @@ const API = 'https://api.github.com'
 const baseQuery = fetchBaseQuery({
     baseUrl: API,
 })
-
 export const githubApi = createApi({
     reducerPath: 'github',
     baseQuery: baseQuery,
@@ -23,6 +22,13 @@ export const githubApi = createApi({
                 }
             },
         }),
+        getById: builder.query<unknown, string>({
+            query: (id: string) => {
+                return {
+                    url: `/user/${id}`,
+                }
+            },
+        }),
     }),
 })
-export const { useGetUsersAscQuery, useGetUsersDescQuery } = githubApi
+export const { useGetUsersAscQuery, useGetUsersDescQuery, useGetByIdQuery } = githubApi

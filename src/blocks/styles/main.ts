@@ -21,6 +21,8 @@ export const Wrapper = styled.div`
 export const Logo = styled.img`
     width: 128px;
     height: 128px;
+    border-radius: 50%;
+    cursor: pointer;
 `
 export const Input = styled.input`
     appearance: none;
@@ -45,9 +47,9 @@ export const Button = styled.button`
     font-size: 1rem;
     color: white;
     background-color: rgba(209, 209, 209, 0.4);
-    transition: .3s background-color ease;   
+    transition: 0.3s background-color ease;
     cursor: pointer;
     &:hover {
-        background-color: rgba(209, 209, 209, 0.9)
+        background-color: rgba(209, 209, 209, 0.9);
     }
 `
